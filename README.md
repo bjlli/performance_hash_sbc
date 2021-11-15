@@ -9,3 +9,18 @@ Os testes realizados são:
  
 - Consumo energético: Para os testes referentes ao consumo energético do dispositivo iot na execução das funções hash utiliza-se o sensor de corrente INA219 com comunicação I²C com um terceiro dispositivo. O sensor deve ser fazer medições enquanto o dispositivo (sem nenhum periférico) executa os scripts das funções por diversas vezes.
 
+Para a execução destes scripts você vai precisar de:
+
+-PyCryptodome: pip3 install pycryptodomex
+
+-Hashlib: pip3 install hashlib
+
+-Timeit module
+
+-Pi-ina219 library
+
+-Sys module
+
+-Numpy package
+
+Python version 3.6.9
