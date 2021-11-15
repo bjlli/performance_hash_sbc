@@ -1,4 +1,4 @@
-#Desempenho de funções hash criptográficas em computadores de placa única.
+# Desempenho de funções hash criptográficas em computadores de placa única.
 
 Os scripts deste repositório tem como objetivo testar e analisar o desempenho de funções hash criptográficas implementadas em python em computadores de placa única (com sistema operacional Linux, com base Debian). São utilizadas para os testes as seguintes funções: SHA2, Blake2, SHA3 (Keccak) e SHAKE e todas foram elas implementadas para retornar códigos hash de 256 bits (32 bytes).
 
