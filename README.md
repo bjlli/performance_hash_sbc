@@ -4,7 +4,7 @@ Os scripts deste repositório tem como objetivo testar e analisar o desempenho d
 
 Os testes realizados são:
 
-- Análise de tempo: São gerados arquivos pseudoaleatórios de tamanhos pré-determinados (1B, 100, 1KB, 100KB e 1MB) contendo caracteres alfanuméricos e especiais, esses arquivos são as entradas das funções hash. O tempo de execução do script para a obtenção do código hash é aferido utilizando-se o módulo timeit em python, para cada medição de tempo um novo arquivo pseudoaleatório é gerado e depois são tirados os dados estatísticos dos ensaios.
+- Análise de tempo: São gerados arquivos pseudoaleatórios de tamanhos pré-determinados (16B, 64B, 256B, 1KB, 8KB e 32KB) contendo caracteres alfanuméricos e especiais, esses arquivos são as entradas das funções hash. O tempo de execução do script para a obtenção do código hash é aferido utilizando-se o módulo timeit em python, para cada medição de tempo um novo arquivo pseudoaleatório é gerado e depois são tirados os dados estatísticos dos ensaios.
 
  
 - Consumo energético: Para os testes referentes ao consumo energético do dispositivo iot na execução das funções hash utiliza-se o sensor de corrente INA219 com comunicação I²C com um terceiro dispositivo. O sensor deve ser fazer medições enquanto o dispositivo (sem nenhum periférico) executa os scripts das funções por diversas vezes.

@@ -36,14 +36,19 @@ echo "--------------------"
 echo "Medidas para SHA256:"
 echo "--------------------"
 
-#Para 1B:
-func_loop 100 1 sha256_time.py
-echo "Para 1B:"
+#Para 16B:
+func_loop 100 16 sha256_time.py
+echo "Para 16B:"
 python3 calc.py ${time_array[@]}
 
-#Para 100B:
-func_loop 100 100 sha256_time.py
-echo "Para 100B:"
+#Para 64B:
+func_loop 100 64 sha256_time.py
+echo "Para 64B:"
+python3 calc.py ${time_array[@]}
+
+#Para 256B:
+func_loop 100 256 sha256_time.py
+echo "Para 256B:"
 python3 calc.py ${time_array[@]}
 
 #Para 1KB:
@@ -51,15 +56,16 @@ func_loop 100 1024 sha256_time.py
 echo "Para 1KB:"
 python3 calc.py ${time_array[@]}
 
-#Para 100KB:
-func_loop 100 102400 sha256_time.py
-echo "Para 100KB:"
+#Para 8KB:
+func_loop 100 8192 sha256_time.py
+echo "Para 8KB:"
 python3 calc.py ${time_array[@]}
 
-#Para 1MB:
-func_loop 100 1048576 sha256_time.py
-echo "Para 1MB:"
+#Para 32KB:
+func_loop 100 32768 sha256_time.py
+echo "Para 32KB:"
 python3 calc.py ${time_array[@]}
+
 
 #--------------------------------------------------------
 #PARA BLAKE2:
@@ -68,14 +74,19 @@ echo "--------------------"
 echo "Medidas para BLAKE2:"
 echo "--------------------"
 
-#Para 1B:
-func_loop 100 1 blake2_time.py
-echo "Para 1B:"
+#Para 16B:
+func_loop 100 16 blake2_time.py
+echo "Para 16B:"
 python3 calc.py ${time_array[@]}
 
-#Para 100B:
-func_loop 100 100 blake2_time.py
-echo "Para 100B:"
+#Para 64B:
+func_loop 100 64 blake2_time.py
+echo "Para 64B:"
+python3 calc.py ${time_array[@]}
+
+#Para 256B:
+func_loop 100 256 blake2_time.py
+echo "Para 256B:"
 python3 calc.py ${time_array[@]}
 
 #Para 1KB:
@@ -83,14 +94,14 @@ func_loop 100 1024 blake2_time.py
 echo "Para 1KB:"
 python3 calc.py ${time_array[@]}
 
-#Para 100KB:
-func_loop 100 102400 blake2_time.py
-echo "Para 100KB:"
+#Para 8KB:
+func_loop 100 8192 blake2_time.py
+echo "Para 8KB:"
 python3 calc.py ${time_array[@]}
 
-#Para 1MB:
-func_loop 100 1048576 blake2_time.py
-echo "Para 1MB:"
+#Para 32KB:
+func_loop 100 32768 blake2_time.py
+echo "Para 32KB:"
 python3 calc.py ${time_array[@]}
 
 #------------------------------------------------------------
@@ -100,14 +111,19 @@ echo "----------------------"
 echo "Medidas para SHA3_256:"
 echo "----------------------"
 
-#Para 1B:
-func_loop 100 1 sha3_256_time.py
-echo "Para 1B:"
+#Para 16B:
+func_loop 100 16 sha3_256_time.py
+echo "Para 16B:"
 python3 calc.py ${time_array[@]}
 
-#Para 100B:
-func_loop 100 100 sha256_time.py
-echo "Para 100B:"
+#Para 64B:
+func_loop 100 64 sha256_time.py
+echo "Para 64B:"
+python3 calc.py ${time_array[@]}
+
+#Para 256B:
+func_loop 100 256 sha3_256_time.py
+echo "Para 256B:"
 python3 calc.py ${time_array[@]}
 
 #Para 1KB:
@@ -115,14 +131,14 @@ func_loop 100 1024 sha3_256_time.py
 echo "Para 1KB:"
 python3 calc.py ${time_array[@]}
 
-#Para 100KB:
-func_loop 100 102400 sha3_256_time.py
-echo "Para 100KB:"
+#Para 8KB:
+func_loop 100 8192 sha3_256_time.py
+echo "Para 8KB:"
 python3 calc.py ${time_array[@]}
 
-#Para 1MB:
-func_loop 100 1048576 sha3_256_time.py
-echo "Para 1MB:"
+#Para 32KB:
+func_loop 100 32768 sha3_256_time.py
+echo "Para 32KB:"
 python3 calc.py ${time_array[@]}
 
  #------------------------------------------------------------
@@ -132,14 +148,19 @@ echo "----------------------"
 echo "Medidas para SHAKE256:"
 echo "----------------------"
 
-#Para 1B:
-func_loop 100 1 shake256_time.py
-echo "Para 1B:"
+#Para 16B:
+func_loop 100 16 shake256_time.py
+echo "Para 16B:"
 python3 calc.py ${time_array[@]}
 
-#Para 100B:
-func_loop 100 100 shake256_time.py
-echo "Para 100B:"
+#Para 64B:
+func_loop 100 64 shake256_time.py
+echo "Para 64B:"
+python3 calc.py ${time_array[@]}
+
+#Para 256B:
+func_loop 100 256 shake256_time.py
+echo "Para 256B:"
 python3 calc.py ${time_array[@]}
 
 #Para 1KB:
@@ -147,12 +168,13 @@ func_loop 100 1024 shake256_time.py
 echo "Para 1KB:"
 python3 calc.py ${time_array[@]}
 
-#Para 100KB:
-func_loop 5 102400 shake256_time.py
-echo "Para 100KB:"
+#Para 8KB:
+func_loop 100 8192 shake256_time.py
+echo "Para 8KB:"
 python3 calc.py ${time_array[@]}
 
-#Para 1MB:
-func_loop 100 1048576 shake256_time.py
-echo "Para 1MB:"
+
+#Para 32KB:
+func_loop 100 32768 shake256_time.py
+echo "Para 32KB:"
 python3 calc.py ${time_array[@]}
