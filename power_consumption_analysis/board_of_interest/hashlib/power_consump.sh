@@ -1,12 +1,12 @@
 #!/bin/bash
 
-file_gen(){
+file_gen_wname(){
     tr -dc A-Za-z0-9_/*@_?! </dev/urandom | head -c $1 > "data_$echo$2.txt"
 }
 
 declare -a name_array
 
-func_loop(){
+func_loop_wname(){
     for ((i=0;i<$1;i++)); do
         file_gen $2 $i
         name_array[$i]="data_$echo$i.txt"
@@ -14,7 +14,7 @@ func_loop(){
 }
 
 
-func_loop 1000 16
+func_loop_wname 1000 16
 
 echo "--------------------------"
 echo "Rodando scripts de SHA256:"
